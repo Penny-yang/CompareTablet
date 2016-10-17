@@ -1,0 +1,297 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.peipeiyang.tablets.TabletsFragment"
+    tools:showIn="@layout/activity_tablets">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tablet_title"
+        android:id="@+id/table_ttitletext"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/size30"
+        android:background="#e61131"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image1"
+        android:src="@drawable/amozontablet"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/heightsize100"
+        android:maxWidth="@dimen/heightsize100"
+        android:layout_below="@+id/table_ttitletext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image2"
+        android:src = "@drawable/dragon"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:layout_alignTop="@+id/tablet_image1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image3"
+        android:src="@drawable/hp"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:layout_alignTop="@+id/tablet_image2"
+        android:layout_toRightOf="@+id/table_ttitletext"
+        android:layout_toEndOf="@+id/table_ttitletext" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image4"
+        android:src="@drawable/lg"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/heightsize100"
+        android:maxWidth="@dimen/heightsize100"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/tablet_image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image5"
+        android:src="@drawable/samsunggalaxytab"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:layout_alignTop="@+id/tablet_image4"
+        android:layout_alignLeft="@+id/tablet_image2"
+        android:layout_alignStart="@+id/tablet_image2"
+        android:layout_alignRight="@+id/tablet_image2"
+        android:layout_alignEnd="@+id/tablet_image2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_image6"
+        android:src="@drawable/sony"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:layout_above="@+id/tablet_name6"
+        android:layout_alignLeft="@+id/tablet_image3"
+        android:layout_alignStart="@+id/tablet_image3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name1"
+        android:id="@+id/tablet_name1"
+        android:layout_alignRight="@+id/tablet_image1"
+        android:layout_alignEnd="@+id/tablet_image1"
+        android:layout_below="@+id/tablet_image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0c26f0"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check1"
+        android:layout_below="@+id/tablet_name1"
+        android:layout_alignRight="@+id/tablet_name1"
+        android:layout_alignEnd="@+id/tablet_name1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name2"
+        android:id="@+id/tablet_name2"
+        android:textColor="#0c26f0"
+        android:textStyle="bold"
+        android:layout_below="@+id/tablet_image1"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check2"
+        android:layout_below="@+id/tablet_name2"
+        android:layout_alignLeft="@+id/tablet_image2"
+        android:layout_alignStart="@+id/tablet_image2"
+        android:layout_alignRight="@+id/tablet_name2"
+        android:layout_alignEnd="@+id/tablet_name2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name3"
+        android:id="@+id/tablet_name3"
+        android:textColor="#0c26f0"
+        android:textStyle="bold"
+        android:layout_above="@+id/tablet_check2"
+        android:layout_alignLeft="@+id/tablet_image6"
+        android:layout_alignStart="@+id/tablet_image6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name4"
+        android:id="@+id/tablet_name4"
+        android:textColor="#0c26f0"
+        android:textStyle="bold"
+        android:layout_below="@+id/tablet_image4"
+        android:layout_alignRight="@+id/tablet_image4"
+        android:layout_alignEnd="@+id/tablet_image4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check4"
+        android:layout_below="@+id/tablet_name4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name5"
+        android:id="@+id/tablet_name5"
+        android:textColor="#0c26f0"
+        android:textStyle="bold"
+        android:layout_above="@+id/tablet_check4"
+        android:layout_alignRight="@+id/tablet_image5"
+        android:layout_alignEnd="@+id/tablet_image5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check5"
+        android:layout_below="@+id/tablet_name5"
+        android:layout_alignLeft="@+id/tablet_name5"
+        android:layout_alignStart="@+id/tablet_name5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name6"
+        android:id="@+id/tablet_name6"
+        android:textColor="#0c26f0"
+        android:textStyle="bold"
+        android:layout_above="@+id/tablet_check5"
+        android:layout_alignRight="@+id/tablet_image3"
+        android:layout_alignEnd="@+id/tablet_image3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check3"
+        android:layout_alignBottom="@+id/tablet_check2"
+        android:layout_alignLeft="@+id/tablet_check6"
+        android:layout_alignStart="@+id/tablet_check6" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        android:id="@+id/tablet_check6"
+        android:layout_below="@+id/tablet_name6"
+        android:layout_alignRight="@+id/tablet_name3"
+        android:layout_alignEnd="@+id/tablet_name3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compareButn"
+        android:id="@+id/tablet_compareButn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tablet_check2"
+        android:layout_alignEnd="@+id/tablet_check2"
+        android:layout_below="@+id/tablet_likeTV5"
+        android:textSize="@dimen/size10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV2"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_alignTop="@+id/tablet_likeTV1"
+        android:layout_alignLeft="@+id/tablet_likeTV5"
+        android:layout_alignStart="@+id/tablet_likeTV5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV1"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_below="@+id/tablet_check1"
+        android:layout_alignRight="@+id/tablet_image4"
+        android:layout_alignEnd="@+id/tablet_image4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV3"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_alignTop="@+id/tablet_likeTV2"
+        android:layout_alignLeft="@+id/tablet_name6"
+        android:layout_alignStart="@+id/tablet_name6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV4"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_below="@+id/tablet_check4"
+        android:layout_alignRight="@+id/tablet_name4"
+        android:layout_alignEnd="@+id/tablet_name4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV5"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_alignBottom="@+id/tablet_likeTV4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablet_likeTV6"
+        android:textSize="@dimen/size20"
+        android:drawableLeft="@drawable/ic_thumb_up_black_18dp"
+        android:textColor="#cb1717"
+        android:layout_below="@+id/tablet_check6"
+        android:layout_toRightOf="@+id/tablet_likeTV3"
+        android:layout_toEndOf="@+id/tablet_likeTV3" />
+
+
+</RelativeLayout>

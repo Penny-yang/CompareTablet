@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.peipeiyang.tablets.compareFragment"
+    tools:showIn="@layout/activity_compare">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compare_photo1"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:src ="@drawable/amozontablet"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/cd1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item1name"
+        android:layout_alignLeft="@+id/compare_item2name"
+        android:layout_alignStart="@+id/compare_item2name"
+        android:layout_alignTop="@+id/compare_photo1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item1system"
+        android:layout_below="@+id/compare_item1name"
+        android:layout_alignLeft="@+id/compare_item1name"
+        android:layout_alignStart="@+id/compare_item1name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item1dimensions"
+
+        android:layout_below="@+id/compare_item1system"
+        android:layout_alignLeft="@+id/compare_item1system"
+        android:layout_alignStart="@+id/compare_item1system" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item1weight"
+        android:layout_below="@+id/compare_item1dimensions"
+        android:layout_alignLeft="@+id/compare_item1dimensions"
+        android:layout_alignStart="@+id/compare_item1dimensions" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/like_it"
+
+        android:id="@+id/likeCheckBox1"
+        android:layout_alignBottom="@+id/compare_photo1"
+        android:layout_alignLeft="@+id/compare_item1weight"
+        android:layout_alignStart="@+id/compare_item1weight" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compare_photo2"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+        android:src="@drawable/hp"
+        android:contentDescription="@string/cd2"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/compare_photo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item2name"
+
+        android:layout_alignTop="@+id/compare_photo2"
+        android:layout_alignLeft="@+id/compare_item2system"
+        android:layout_alignStart="@+id/compare_item2system" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item2system"
+        android:layout_below="@+id/compare_item2name"
+        android:layout_alignLeft="@+id/compare_item2dimensions"
+        android:layout_alignStart="@+id/compare_item2dimensions" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item2dimensions"
+        android:layout_below="@+id/compare_item2system"
+        android:layout_alignLeft="@+id/compare_item2weight"
+        android:layout_alignStart="@+id/compare_item2weight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item2weight"
+        android:layout_below="@+id/compare_item2dimensions"
+        android:layout_alignLeft="@+id/compare_item3name"
+        android:layout_alignStart="@+id/compare_item3name" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/like_it"
+
+        android:id="@+id/likeCheckBox2"
+        android:layout_alignBottom="@+id/compare_photo2"
+        android:layout_alignLeft="@+id/compare_item2weight"
+        android:layout_alignStart="@+id/compare_item2weight" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compare_photo3"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/heightsize100"
+        android:maxHeight="@dimen/heightsize100"
+
+        android:src ="@drawable/hp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/cd3"
+        android:layout_above="@+id/compare_done"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item3name"
+        android:layout_alignTop="@+id/compare_photo3"
+        android:layout_alignLeft="@+id/compare_item3system"
+        android:layout_alignStart="@+id/compare_item3system" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item3system"
+        android:layout_below="@+id/compare_item3name"
+        android:layout_alignLeft="@+id/compare_item3dimensions"
+        android:layout_alignStart="@+id/compare_item3dimensions" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item3dimensions"
+        android:layout_below="@+id/compare_item3system"
+        android:layout_alignLeft="@+id/compare_item3weight"
+        android:layout_alignStart="@+id/compare_item3weight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/compare_item3weight"
+        android:layout_below="@+id/compare_item3dimensions"
+        android:layout_alignLeft="@+id/compare_done"
+        android:layout_alignStart="@+id/compare_done" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/like_it"
+
+        android:id="@+id/likeCheckBox3"
+        android:layout_alignBottom="@+id/compare_photo3"
+        android:layout_alignLeft="@+id/compare_item3weight"
+        android:layout_alignStart="@+id/compare_item3weight" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doneButton"
+        android:id="@+id/compare_done"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
